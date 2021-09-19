@@ -8,6 +8,10 @@ import NewContract from "../components/NewContract.vue";
 import RenewContract from "../components/RenewContract.vue";
 import RenewContractList from "../components/RenewContractList.vue";
 import Configuration from "../components/Configuration.vue";
+import NewContractList from "../components/NewContractList.vue";
+import ManualPaymentList from "../components/ManualPaymentList.vue";
+import EditPriceList from "../components/EditPriceList";
+import AdvancePaymentList from "../components/AdvancePaymentList"
 Vue.use(VueRouter)
 
 const routes = [
@@ -50,6 +54,26 @@ const routes = [
     path: '/rent_management',
     name: 'rent_management',
     component:RentManagement
+  },
+  {
+    path: '/new_contract_list',
+    name: 'new_contract_list',
+    component:NewContractList
+  },
+  {
+    path: '/manual_payment_list',
+    name: 'manual_payment_list',
+    component:ManualPaymentList
+  },
+  {
+    path: '/edit_price_list',
+    name: 'edit_price_list',
+    component:EditPriceList
+  },
+  {
+    path: '/advance_payment_list',
+    name: 'advance_payment_list',
+    component:AdvancePaymentList
   }
 ]
 

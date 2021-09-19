@@ -1009,7 +1009,7 @@ background: red !important;
 		text-align: start;
 	}
 	.accent--text{
-		color:unset!important;
+		color:#767676!important;
 	}
 @media(max-width:600px){
 	.w-100 .v-input__slot{
@@ -1028,7 +1028,10 @@ background: red !important;
 .grey1 .v-icon{
 	color: rgba(0,0,0,.54)!important;
 }
-
+.configuration, .advance-payment, .edit-price-list,
+.ManualPaymentList, .NewContractList, .renew-contract-list, .terminate-list{
+	font-family: 'Roboto', sans-serif !important;
+}
 /*****************************End Login Page********************************/
 @media(min-width:1298px){
 	/* .re-filter .v-menu__content{
