@@ -1,5 +1,5 @@
 <template>
-  <v-app id="app">
+ <div>
            <v-navigation-drawer value="true" v-model="drawer" fixed left app>
         <v-list>
           <v-img
@@ -92,19 +92,22 @@
         ></v-img>
       </v-toolbar>
       <v-content>
-        
-         <router-view/>
-         <!-- <v-btn class="re-orange" dark to="/terminate_contract">Next</v-btn> -->
+
+          <TerminateContract/>
+          <router-view/>
       </v-content>
-  </v-app>
+ </div>
 </template>
+
 <script>
 
-
+import TerminateContract from "./TerminateContract.vue"
 export default {
-    components: {
-     
-    },
+  name: 'Page',
+  components: {
+
+   TerminateContract
+  },
     data: () => ({
           drawer: null,
           pagination: {},
@@ -118,25 +121,4 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
