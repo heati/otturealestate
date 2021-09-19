@@ -220,7 +220,7 @@
                         <td class="text-xs-center" dense>
                           {{ props.item.floor }}
                         </td>
-                        <td class="text-xs-center re-orange-color" dense>
+                        <td class="text-xs-center re-orange-color re-width-165 " dense>
                           <div class="re-someone">
                             {{ props.item.tenantName }}
                           </div>

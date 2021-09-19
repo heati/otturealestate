@@ -940,6 +940,7 @@ background: red !important;
 .re-chec__p{
 	color:#5A5A5A;
 	font-size: 12px;
+	text-align: start;
 }
 .v-sheet{
 	border-radius: 0px;
