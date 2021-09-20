@@ -206,7 +206,7 @@
                   primary-title
                 
                 >
-                <span>
+                <span class="text-start">
                   CONTRACT ID
                 </span>
                 <v-icon class="d-flex justify-end"  @click="dialog = false">

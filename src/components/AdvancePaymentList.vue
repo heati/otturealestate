@@ -193,7 +193,7 @@
                   primary-title
                 
                 >
-                <span>
+                <span class="text-start">
                   CONTRACT ID
                 </span>
                 <v-icon class="d-flex justify-end"  @click="dialog = false">
@@ -232,7 +232,7 @@
                             <v-list-tile-content class="align-end">{{ units[0].totalAmount }}</v-list-tile-content>
                           </v-list-tile>
                         </v-list>
-                        <div style="padding-inline-start:18px">Paid Months/Year</div>
+                        <div style="padding-inline-start:18px" class=" text-start">Paid Months/Year</div>
                         <v-layout wrap class="check">
                             <v-flex xs6 sm6>
                               <v-checkbox label="June, 2021, 200 KD" input-value="true" disabled></v-checkbox>

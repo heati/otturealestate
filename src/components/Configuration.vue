@@ -147,6 +147,7 @@
                       label="Hide email"
                       v-model="hideEmail"
                       class="re-gray-color"
+                       color = "grey darken-1"
                     ></v-checkbox>
                     <v-select :items="items" label="Alert email"> </v-select>
                     <v-select :items="items" label="Alert sms"> </v-select>
@@ -154,6 +155,7 @@
                       label="Individual proxy fields"
                       v-model="individualProxy"
                       class="re-gray-color"
+                       color = "grey darken-1"
                     ></v-checkbox>
                   </v-card-text>
                 </v-card>
@@ -172,8 +174,9 @@
                   label="Terms & conditions [En]"
                   v-model="checkbox1"
                   class="re-gray-color"
+                  color = "grey darken-1"
                 ></v-checkbox>
-                <p class="re-margin-t40 re-gray-color re-padding-start7">
+                <p class="re-margin-t40 re-gray-color re-padding-start7 text-start">
                   Terms & conditions [En]
                 </p>
                 <editor
@@ -195,7 +198,7 @@
            ]
        }"
      />
-      <p class="re-margin-t40 re-gray-color re-padding-start7">
+      <p class="re-margin-t40 re-gray-color re-padding-start7 text-start">
                   Terms & conditions [Ar]
                 </p>
                             <editor
@@ -238,6 +241,7 @@
                       label="Required"
                       v-model="checkbox2"
                       class="re-gray-color re-required"
+                      color = "grey darken-1"
                     ></v-checkbox>
                   </v-flex>
                 </v-layout>
@@ -247,6 +251,7 @@
                       label="Itinerary display"
                       v-model="Itinerary"
                       class="re-gray-color justify-start"
+                      color = "grey darken-1"
                     ></v-checkbox>
                     <p class="re-chec__p">Leoms iskb jdbvbj jsvhys sjbjd</p>
                   </v-flex>
@@ -256,6 +261,7 @@
                         label="Custom detail field"
                         v-model="custom"
                         class="re-gray-color"
+                        color = "grey darken-1"
                       ></v-checkbox>
                       <p class="re-chec__p">Leoms iskb jdbvbj jsvhys sjbjd</p>
                     </div>
@@ -266,6 +272,7 @@
                         label="Is active"
                         v-model="active"
                         class="re-gray-color"
+                        color = "grey darken-1"
                       ></v-checkbox>
                       <p class="re-chec__p">Leoms iskb jdbvbj jsvhys sjbjd</p>
                     </div>
@@ -280,6 +287,7 @@
                       label="Is Unit Type"
                       v-model="isUnit"
                       class="re-gray-color justify-start"
+                      color = "grey darken-1"
                     ></v-checkbox>
                     <p class="re-chec__p">Leoms iskb jdbvbj jsvhys sjbjd</p>
                   </v-flex>
@@ -289,6 +297,7 @@
                         label="Is Property"
                         v-model="isProperty"
                         class="re-gray-color"
+                        color = "grey darken-1"
                       ></v-checkbox>
                       <p class="re-chec__p">Leoms iskb jdbvbj jsvhys sjbjd</p>
                     </div>
@@ -299,6 +308,7 @@
                         label="Is Tenant"
                         v-model="isTenant"
                         class="re-gray-color"
+                        color = "grey darken-1"
                       ></v-checkbox>
                       <p class="re-chec__p">Leoms iskb jdbvbj jsvhys sjbjd</p>
                     </div>
@@ -329,6 +339,7 @@
                       label="Required"
                       v-model="required"
                       class="re-gray-color re-required"
+                      color = "grey darken-1"
                     ></v-checkbox>
                   </v-flex>
                 </v-layout>
@@ -338,6 +349,7 @@
                       label="Itinerary display"
                       v-model="Itinerary"
                       class="re-gray-color justify-start"
+                      color = "grey darken-1"
                     ></v-checkbox>
                     <p class="re-chec__p">Leoms iskb jdbvbj jsvhys sjbjd</p>
                   </v-flex>
@@ -347,6 +359,7 @@
                         label="Custom detail field"
                         v-model="custom"
                         class="re-gray-color"
+                        color = "grey darken-1"
                       ></v-checkbox>
                       <p class="re-chec__p">Leoms iskb jdbvbj jsvhys sjbjd</p>
                     </div>
@@ -357,6 +370,7 @@
                         label="Is active"
                         v-model="active"
                         class="re-gray-color"
+                        color = "grey darken-1"
                       ></v-checkbox>
                       <p class="re-chec__p">Leoms iskb jdbvbj jsvhys sjbjd</p>
                     </div>
@@ -371,6 +385,7 @@
                       label="Is Unit Type"
                       v-model="isUnit1"
                       class="re-gray-color justify-start"
+                      color = "grey darken-1"
                     ></v-checkbox>
                     <p class="re-chec__p">Leoms iskb jdbvbj jsvhys sjbjd</p>
                   </v-flex>
@@ -380,6 +395,7 @@
                         label="Is Property"
                         v-model="isProperty1"
                         class="re-gray-color"
+                        color = "grey darken-1"
                       ></v-checkbox>
                       <p class="re-chec__p">Leoms iskb jdbvbj jsvhys sjbjd</p>
                     </div>
@@ -390,6 +406,7 @@
                         label="Is Tenant"
                         v-model="isTenant1"
                         class="re-gray-color"
+                        color = "grey darken-1"
                       ></v-checkbox>
                       <p class="re-chec__p">Leoms iskb jdbvbj jsvhys sjbjd</p>
                     </div>
@@ -420,6 +437,7 @@
                       label="Required"
                       v-model="required"
                       class="re-gray-color re-required"
+                      color = "grey darken-1"
                     ></v-checkbox>
                   </v-flex>
                 </v-layout>
@@ -429,6 +447,7 @@
                       label="Itinerary display"
                       v-model="Itinerary"
                       class="re-gray-color justify-start"
+                      color = "grey darken-1"
                     ></v-checkbox>
                     <p class="re-chec__p">Leoms iskb jdbvbj jsvhys sjbjd</p>
                   </v-flex>
@@ -438,6 +457,7 @@
                         label="Custom detail field"
                         v-model="custom"
                         class="re-gray-color"
+                        color = "grey darken-1"
                       ></v-checkbox>
                       <p class="re-chec__p">Leoms iskb jdbvbj jsvhys sjbjd</p>
                     </div>
@@ -448,6 +468,7 @@
                         label="Is active"
                         v-model="active"
                         class="re-gray-color"
+                        color = "grey darken-1"
                       ></v-checkbox>
                       <p class="re-chec__p">Leoms iskb jdbvbj jsvhys sjbjd</p>
                     </div>
@@ -462,6 +483,7 @@
                       label="Is Unit Type"
                       v-model="isUnit2"
                       class="re-gray-color justify-start"
+                      color = "grey darken-1"
                     ></v-checkbox>
                     <p class="re-chec__p">Leoms iskb jdbvbj jsvhys sjbjd</p>
                   </v-flex>
@@ -471,6 +493,7 @@
                         label="Is Property"
                         v-model="isProperty2"
                         class="re-gray-color"
+                        color = "grey darken-1"
                       ></v-checkbox>
                       <p class="re-chec__p">Leoms iskb jdbvbj jsvhys sjbjd</p>
                     </div>
@@ -481,6 +504,7 @@
                         label="Is Tenant"
                         v-model="isTenant2"
                         class="re-gray-color"
+                        color = "grey darken-1"
                       ></v-checkbox>
                       <p class="re-chec__p">Leoms iskb jdbvbj jsvhys sjbjd</p>
                     </div>

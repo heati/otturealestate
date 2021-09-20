@@ -1008,9 +1008,13 @@ background: red !important;
 	}
 	.display-2{
 		text-align: start;
+		line-height: 1.5!important;
 	}
 	.accent--text{
 		color:#767676!important;
+	}
+	.text-start{
+		text-align: start;
 	}
 @media(max-width:600px){
 	.w-100 .v-input__slot{

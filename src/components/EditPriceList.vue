@@ -207,7 +207,7 @@
                   class="headline d-flex justify-space-between form-title"
                   primary-title
                 >
-                  <span> CONTRACT ID </span>
+                  <span class="text-start"> CONTRACT ID </span>
                   <v-icon class="d-flex justify-end" @click="dialog = false">
                     close
                   </v-icon>
