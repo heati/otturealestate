@@ -235,13 +235,13 @@
                         <div style="padding-inline-start:18px" class=" text-start">Paid Months/Year</div>
                         <v-layout wrap class="check">
                             <v-flex xs6 sm6>
-                              <v-checkbox label="June, 2021, 200 KD" input-value="true" disabled></v-checkbox>
+                              <v-checkbox label="June, 2021, 200 KD" input-value="true" color= "grey darken-1" disabled></v-checkbox>
                             </v-flex>
                             <v-flex xs6 sm6>
-                              <v-checkbox label="Junly, 2021, 200 KD" input-value="true" disabled></v-checkbox>
+                              <v-checkbox label="Junly, 2021, 200 KD" input-value="true" color= "grey darken-1" disabled></v-checkbox>
                             </v-flex>
                             <v-flex xs6 sm6>
-                              <v-checkbox label="August 2021" input-value="true" disabled></v-checkbox>
+                              <v-checkbox label="August 2021" input-value="true"  color= "grey darken-1" disabled></v-checkbox>
                             </v-flex>
 
                           </v-layout>

@@ -823,6 +823,10 @@ td .v-text-field__slot input {
 	  flex-direction: column;
   } */
 /*****************************start realestate new Pages********************************/
+.re-custom-controls{
+	display: flex;
+	justify-content: space-between;
+}
 .content{
 	padding-inline-start: 2rem ;
 	background:#fff;

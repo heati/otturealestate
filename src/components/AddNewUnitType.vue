@@ -58,6 +58,7 @@
                             ></v-text-field>
                             <v-checkbox
                             label = "Is Commercial"
+                            color= "grey darken-1"
                             >
           
                             </v-checkbox>

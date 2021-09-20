@@ -42,7 +42,7 @@
                           reverse
                         ></v-text-field>
                         <v-select label="Gateway"> ></v-select>
-                        <v-checkbox label="Allow cash payment"></v-checkbox>
+                        <v-checkbox label="Allow cash payment" color= "grey darken-1"></v-checkbox>
                       </v-form>
                     </v-card-text>
                   </v-card>

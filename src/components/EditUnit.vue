@@ -48,6 +48,7 @@
                           <v-flex xs4>
                             <v-checkbox
                             label="is commercial"
+                            color= "grey darken-1"
                           ></v-checkbox>	
                           </v-flex>  
                         </v-layout>

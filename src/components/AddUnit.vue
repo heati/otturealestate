@@ -56,7 +56,7 @@
                         ></v-text-field>
                         <v-layout wrap class="re-radio">
                           <v-flex xs4>
-                            <v-checkbox label="is commercial"></v-checkbox>
+                            <v-checkbox label="is commercial" color= "grey darken-1"></v-checkbox>
                           </v-flex>
                         </v-layout>
                       </v-form>
