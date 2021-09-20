@@ -29,6 +29,7 @@
                         >
                              <v-text-field 
                                 label="Property Name"
+                                reverse
                               ></v-text-field>
 
                               <v-select 
@@ -45,6 +46,7 @@
                         <v-text-field
                             label="Current Unit Amount"
                             required
+                             reverse
                         ></v-text-field>
 
                         <v-layout wrap>
@@ -52,12 +54,13 @@
                                 <v-text-field
                                     label="Current Unit Discount"
                                     required
+                                     reverse
                                 ></v-text-field>
                             </v-flex>
                             <v-flex xs6>
                                 <v-radio-group v-model="row" row class="re-radios">
-                                    <v-radio label="Percentage" value="radio-1"></v-radio>
-                                    <v-radio label="Fixed" value="radio-2"></v-radio>
+                                    <v-radio label="Percentage" value="radio-1" color="grey darken-1"></v-radio>
+                                    <v-radio label="Fixed" value="radio-2" color="grey darken-1"></v-radio>
                                   </v-radio-group>
                               </v-flex>
                         </v-layout>
@@ -65,11 +68,13 @@
                         <v-text-field
                             label="Current Unit Net Amount"
                             required
+                             reverse
                         ></v-text-field>
 
                         <v-text-field
                             label="New Unit Amount"
                             required
+                             reverse
                         ></v-text-field>
 
                         <v-layout wrap>
@@ -77,12 +82,13 @@
                                 <v-text-field
                                     label="New Unit Discount"
                                     required
+                                     reverse
                                 ></v-text-field>
                             </v-flex>
                             <v-flex xs6>
                                 <v-radio-group v-model="row" row class="re-radios">
-                                    <v-radio label="Percentage" value="radio-1"></v-radio>
-                                    <v-radio label="Fixed" value="radio-2"></v-radio>
+                                    <v-radio label="Percentage" value="radio-1" color="grey darken-1"></v-radio>
+                                    <v-radio label="Fixed" value="radio-2" color="grey darken-1"></v-radio>
                                   </v-radio-group>
                               </v-flex>
                         </v-layout>
@@ -90,6 +96,7 @@
                         <v-text-field
                             label="New Unit Net Amount"
                             required
+                             reverse
                         ></v-text-field>
 
                          </v-form>

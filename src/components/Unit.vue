@@ -53,9 +53,9 @@
                             </v-flex>
                           </v-layout>
                           <v-form>
-                            <v-text-field label="Unit Number"> ></v-text-field>
+                            <v-text-field label="Unit Number" reverse> ></v-text-field>
           
-                            <v-text-field label="Floor"> ></v-text-field>
+                            <v-text-field label="Floor" reverse> ></v-text-field>
                           </v-form>
                         </v-card-text>
                       </v-card>

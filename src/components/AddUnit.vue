@@ -40,16 +40,19 @@
                         <v-text-field
                           label="Unit Type Name (EN)"
                           required
+                          reverse
                         ></v-text-field>
   
                         <v-text-field
                           label="Unit Type Name (AR)"
                           required
+                          reverse
                         ></v-text-field>
   
                         <v-text-field
                           label="Unit Type Description"
                           required
+                          reverse
                         ></v-text-field>
                         <v-layout wrap class="re-radio">
                           <v-flex xs4>

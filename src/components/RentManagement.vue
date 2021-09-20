@@ -135,11 +135,11 @@
                         </v-list-tile>
 
                         <v-list-tile>
-                          <v-text-field label="Year"></v-text-field>
+                          <v-text-field label="Year" reverse></v-text-field>
                         </v-list-tile>
 
                         <v-list-tile>
-                          <v-text-field label="Property name"></v-text-field>
+                          <v-text-field label="Property name" reverse></v-text-field>
                         </v-list-tile>
                       </v-list>
 
@@ -150,7 +150,6 @@
                           >SEARCH</v-btn
                         >
                         <v-btn
-                          color="primary"
                           flat
                           @click="menu = false"
                           class="re-gray-btn re-box-shadow"

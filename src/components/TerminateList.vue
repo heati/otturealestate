@@ -110,7 +110,7 @@
                           >SEARCH</v-btn
                         >
                         <v-btn
-                          color="primary"
+                         
                           flat
                           @click="menu = false"
                           class="re-gray-btn re-box-shadow"
@@ -129,7 +129,7 @@
                     :rows-per-page-items="[15, 30, 50, 100]"
                     :pagination.sync="pagination"
                     hide-actions
-                    
+                    class="width100"
                   >
                     <template v-slot:items="props">
                       <tr @click="dialog=true">

@@ -29,14 +29,17 @@
                         <v-text-field
                           label="Unit Property Name (EN)"
                           required
+                          reverse
                         ></v-text-field>
                         <v-text-field
                           label="Unit Property Name (AR)"
                           required
+                          reverse
                         ></v-text-field>
                         <v-text-field
                           label="Address"
                           required
+                          reverse
                         ></v-text-field>
                         <v-select label="Gateway"> ></v-select>
                         <v-checkbox label="Allow cash payment"></v-checkbox>
@@ -151,6 +154,7 @@
                                             <v-radio
                                               label="Percentage"
                                               value="percentage"
+                                              color="grey darken-1"
                                             ></v-radio>
                                             <v-radio
                                               label="Fixed"
@@ -184,6 +188,7 @@
                                           class="re-input re-centered-label"
                                           label="1"
                                           outline
+                                          reverse
                                         ></v-text-field>
                                       </v-flex>
                                       <v-flex xs4 sm1 class="r-price">
@@ -191,6 +196,7 @@
                                           class="re-input re-centered-label"
                                           label="Price"
                                           outline
+                                          reverse
                                         ></v-text-field>
                                       </v-flex>
                                       <v-flex xs4 sm1 re-text-center>
@@ -245,10 +251,12 @@
                               <v-radio
                                 label="Percentage"
                                 value="percentage"
+                                color="grey darken-1"
                               ></v-radio>
                               <v-radio
                                 label="Fixed"
                                 value="fixed"
+                                 color="grey darken-1"
                               ></v-radio> </v-radio-group
                           ></v-form>
                         </td>
@@ -286,6 +294,7 @@ export default {
         data: () => ({
           discount1: "percentage",
           dialog: false,
+          pagination:{},
           items3: ["All", "Rent", "Lease", "Buy"],
           items: [
             {
@@ -336,7 +345,7 @@ export default {
           ],
           units: [
             {
-              id: "123",
+              id: "123a",
               unitNumber: "1A",
               floor: "G",
               price: "300 KWD",
@@ -344,7 +353,7 @@ export default {
               invoiceAmount: 300,
             },
             {
-              id: "123",
+              id: "123b",
               unitNumber: "1A",
               floor: "G",
               price: "300 KWD",
@@ -352,7 +361,7 @@ export default {
               invoiceAmount: 300,
             },
             {
-              id: "123",
+              id: "123c",
               unitNumber: "1A",
               floor: "G",
               price: "300 KWD",

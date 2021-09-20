@@ -26,11 +26,11 @@
                 </v-card-title>
                 <v-card-text>
                   <v-form>
-                    <v-text-field label="Property Name"></v-text-field>
+                    <v-text-field label="Property Name" reverse ></v-text-field>
 
                     <v-select label="Unit Name"></v-select>
 
-                    <v-text-field label="Tenant Name"></v-text-field>
+                    <v-text-field label="Tenant Name"  reverse></v-text-field>
 
                     <v-layout wrap class="re-radio">
                       <v-flex xs6 sm4>

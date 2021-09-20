@@ -29,12 +29,14 @@
                     <v-text-field
                       label="Day of the month to generate payment links"
                       required
+                      reverse
                       class="mb-2"
                     ></v-text-field>
 
                     <v-text-field
                       label="Day of the month to suspend accessing payment links"
                       required
+                      reverse
                       class="mb-2"
                     ></v-text-field>
                     <v-card
@@ -46,40 +48,6 @@
                     >
                       <v-card-text class="text-xs-center">
                         <v-layout>
-                          <!-- <v-data-table
-                            :headers="headers"
-                            :items="uploadedFiles"
-                            no-data-text=""
-                            hide-actions
-                            class="re-files-tab"
-                            style="width: 100%"
-                          >
-                            <template v-slot:items="props">
-                              <td class="text-xs-left">
-                                <v-layout>
-                                  <v-flex xs1>
-                                    <v-img
-                                      lazy-src="https://picsum.photos/id/11/10/6"
-                                      max-height="50"
-                                      max-width="50"
-                                      src="images/image.png"
-                                    ></v-img>
-                                  </v-flex>
-                                  <v-flex xs11>
-                                    <div>
-                                      <span>File Name: </span>
-                                      <span>{{ props.item.name }}</span>
-                                    </div>
-                                    <div>
-                                      <span>Size: </span>
-                                      <span>{{ props.item.size }}</span>
-                                    </div>
-                                  </v-flex>
-                                </v-layout>
-
-                              </td>
-                            </template>
-                          </v-data-table> -->
                           <v-list>
                             <template v-for="(item) in uploadedFiles">
                               <v-list-tile :key="item.header">
@@ -142,15 +110,15 @@
                 </template>
                 <v-card>
                   <v-card-text>
-                    <v-text-field label="Default email"> </v-text-field>
+                    <v-text-field label="Default email" reverse> </v-text-field>
                     <v-checkbox
                       label="Hide email"
                       v-model="hideEmail"
                       class="re-gray-color"
                        color = "grey darken-1"
                     ></v-checkbox>
-                    <v-select :items="items" label="Alert email"> </v-select>
-                    <v-select :items="items" label="Alert sms"> </v-select>
+                    <v-select :items="items" label="Alert email"  dir="rtl" > </v-select>
+                    <v-select :items="items" label="Alert sms"  dir="rtl"> </v-select>
                     <v-checkbox
                       label="Individual proxy fields"
                       v-model="individualProxy"
@@ -185,17 +153,18 @@
          height: 330,
          menubar: false,
          resize: false,
+         directionality: rtl,
          plugins: [
            'advlist autolink lists link image charmap print preview anchor charmap emoticons ',
-           'searchreplace visualblocks code fullscreen directionality',
+           'searchreplace visualblocks code  directionality fullscreen',
            'insertdatetime media table paste code help wordcount'
          ],
          toolbar:[
          'cut copy paste newdocument remove | undo redo|link image table  charmap emoticons|fullscreen media',
          'bold italic strikethrough  |removeformat|indent outdent| blockquote|   alignleft aligncenter alignright alignjustify |ltr rtl', 
-           'styleselect | formatselect| fontselect|fontsizeselect|forecolor backcolor|  ',
+           'styleselect | formatselect| fontselect|fontsizeselect|forecolor backcolor|',
           
-           ]
+           ],
        }"
      />
       <p class="re-margin-t40 re-gray-color re-padding-start7 text-start">
@@ -207,10 +176,11 @@
          height: 330,
          menubar: false,
          resize: false,
+         directionality:rtl,
          plugins: [
            'advlist autolink lists link image charmap print preview anchor charmap emoticons ',
-           'searchreplace visualblocks code fullscreen directionality',
-           'insertdatetime media table paste code help wordcount'
+           'searchreplace visualblocks code  directionality fullscreen',
+           'insertdatetime media table paste code help wordcount '
          ],
          toolbar:[
          'cut copy paste newdocument remove | undo redo|link image table  charmap emoticons|fullscreen media',
@@ -540,6 +510,8 @@ export default {
   
     data: () => ({
         uploadedFiles: [],
+        rtl: "rtl",
+        right:"right",
           /***** CHECKBOXES********/
           checkbox1: true,
           checkbox2: false,
